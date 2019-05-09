@@ -1,6 +1,6 @@
 This project is a simple UI for the telemetry data provided by 'cf-telemetry'
 
-It expects telemetry data (json) in the src/telemetry folder.
+It expects telemetry data (json) in the src/telemetry folder.  It also requires .json extension on the telemetry data files.
 
 This should work on Linux/Mac with proper path to the telemetry tar file:
 ```
