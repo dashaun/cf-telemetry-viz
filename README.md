@@ -8,6 +8,9 @@ tar -xvf telemetry-output.tar -C src/telemetry
 find ./src/telemetry -type f -print0 | xargs -0 -I{} mv "{}" "{}".json
 ```
 
+![screenshot](screenshot.png?raw=true "Screenshot")
+
+
 --------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
