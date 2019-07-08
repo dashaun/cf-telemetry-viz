@@ -48,11 +48,7 @@ class ServiceUsage extends React.Component {
     }
 
     render() {
-        return (<div
-                style={{
-                    margin: '16px'
-                }}
-            >
+        return (<div>
                 <Container
                     backgroundColor={undefined}
                     draggable={false}
@@ -60,9 +56,7 @@ class ServiceUsage extends React.Component {
                     iconsVisible={false}
                     loading={false}
                     maximized={undefined}
-                    onToggleMaximize={function onToggleMaximize() {
-                    }}
-                    subtitle={undefined}
+                    subtitle={false}
                     title={{
                         text: 'Service Instance Usage Report ' + this.state.serviceUsage.report_time
                     }}

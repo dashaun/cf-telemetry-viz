@@ -32,20 +32,14 @@ class AppUsage extends React.Component {
     };
 
     render() {
-        return (<div
-                style={{
-                    margin: '16px'
-                }}
-            >
+        return (<div>
                 <Container
                     backgroundColor={undefined}
                     draggable={false}
                     dropdownItems={undefined}
                     iconsVisible={false}
                     loading={false}
-                    maximized={undefined}
-                    onToggleMaximize={function onToggleMaximize() {
-                    }}
+                    maximized={false}
                     subtitle={undefined}
                     title={{
                         text: 'Application Instance Usage Report ' + this.state.appUsage.report_time
