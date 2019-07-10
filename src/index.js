@@ -18,6 +18,7 @@ import 'pivotal-ui/css/alignment';
 import 'pivotal-ui/css/flex-grids';
 import 'pivotal-ui/css/tables';
 import './app.css';
+import logo from './img/telemetry-logo.png';
 
 class Reports extends React.Component {
 
@@ -25,7 +26,7 @@ class Reports extends React.Component {
         return (
             <Siteframe {...{
                   headerProps: {
-                    logo: <div className="ptl pbl pll" style={{fontSize: '40px'}}><Icon src="pivotal_ui_inverted" style={{fill: 'currentColor'}}/></div>,
+                    logo: <div className="pal logo"></div>,
                     companyName: 'Pivotal',
                     productName: 'Telemetry Collector'
                   }

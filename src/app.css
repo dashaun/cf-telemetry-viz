@@ -1,4 +1,18 @@
 /* Global */
 body {
-	background-color: #EAEDEF;
+	background-color: black;
+	color:  white;
+}
+
+.logo {
+  background-image: url(./img/telemetry-logo.png);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  height: 60px;
+  width: 60px;
+}
+
+.rv-discrete-color-legend-item {
+	color:  white;
 }
