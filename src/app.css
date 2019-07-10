@@ -16,3 +16,7 @@ body {
 .rv-discrete-color-legend-item {
 	color:  white;
 }
+
+.rv-discrete-color-legend-item.clickable:hover {
+	background-color: black;
+}
