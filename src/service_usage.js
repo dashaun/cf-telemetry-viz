@@ -1,6 +1,8 @@
 import React from 'react';
-import {Container, LineChart} from 'davi-js';
+import {Container, LineChart, setTheme} from 'davi-js';
 import serviceUsage from './telemetry/usage_service/service_usage.json';
+
+setTheme('dark')
 
 class ServiceUsage extends React.Component {
     constructor(props) {
@@ -24,7 +26,6 @@ class ServiceUsage extends React.Component {
                 )
             }
             serviceData.push({
-                color: ServiceUsage.getRandomColor(),
                 data: sData,
                 opacity: 0.5,
                 strokeWidth: 3,
@@ -38,21 +39,8 @@ class ServiceUsage extends React.Component {
 
     };
 
-    static getRandomColor() {
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
-
     render() {
-        return (<div
-                style={{
-                    margin: '16px'
-                }}
-            >
+        return (<div>
                 <Container
                     backgroundColor={undefined}
                     draggable={false}
@@ -60,11 +48,9 @@ class ServiceUsage extends React.Component {
                     iconsVisible={false}
                     loading={false}
                     maximized={undefined}
-                    onToggleMaximize={function onToggleMaximize() {
-                    }}
-                    subtitle={undefined}
+                    subtitle={false}
                     title={{
-                        text: 'Service Instance Usage Report ' + this.state.serviceUsage.report_time
+                        text: 'Service Instance Usage ' + this.state.serviceUsage.report_time
                     }}
                 >
                     <LineChart

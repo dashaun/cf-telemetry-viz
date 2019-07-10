@@ -32,44 +32,38 @@ class AppUsage extends React.Component {
     };
 
     render() {
-        return (<div
-                style={{
-                    margin: '16px'
-                }}
-            >
+        return (<div>
                 <Container
                     backgroundColor={undefined}
                     draggable={false}
                     dropdownItems={undefined}
                     iconsVisible={false}
                     loading={false}
-                    maximized={undefined}
-                    onToggleMaximize={function onToggleMaximize() {
-                    }}
+                    maximized={false}
                     subtitle={undefined}
                     title={{
-                        text: 'Application Instance Usage Report ' + this.state.appUsage.report_time
+                        text: 'Application Instance Usage ' + this.state.appUsage.report_time
                     }}
                 >
                     <LineChart
                         alertIndicators={[]}
                         data={[
                             {
-                                color: 'red',
+                                color: '#36A67E',
                                 data: this.state.maxUsage,
                                 opacity: 0.5,
                                 strokeWidth: 3,
                                 title: 'Max Instances'
                             },
                             {
-                                color: '#00b5a3',
+                                color: '#E2CA42',
                                 data: this.state.avgInstances,
                                 opacity: 0.5,
                                 strokeWidth: 3,
                                 title: 'Average Instances'
                             },
                             {
-                                color: 'yellow',
+                                color: '#3C81D9',
                                 data: this.state.instanceHours,
                                 opacity: 0.5,
                                 strokeWidth: 3,
